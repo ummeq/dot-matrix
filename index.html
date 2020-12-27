@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <form name='write' action="" method="get">
+  
+  <div class="wrapper">
+      <div id="matrix_one">
+        <table id="dynamic_table" class="matrix-table">
+        </table>
+        <input type="radio" id="grid" name="matrix_radio" value="grid" checked="checked"/>
+      </div>
+      <div>
+        <table id="dynamic_table_two" class="matrix-table">
+        </table>
+        <input type="radio" id="checkers" name="matrix_radio" value="checkers" >
+      </div>
+      <div>
+        <table id="dynamic_table_three" class="matrix-table">
+        </table>
+        <input type="radio" id="oddcircle" name="matrix_radio" value="oddcircle" >
+      </div>
+</div>
+    <div id="grid">
+    <div id="grid-1">
+      <p><input type="number" id="widt" name="box_width" placeholder="Enter width in px" /></p>
+      <p><input type="number" id="height" name="box_height"  placeholder="Enter height in px"></p>
+    </div>
+    <div id="grid-2">
+      <p> <input type="number" id="row" name="box_rows"  placeholder="Enter number of rows" /></p>
+      <p> <input type="number" id="column" name="box_columns"  placeholder="Enter number of columns"></p>
+    </div>
+    <div id="grid-3">
+      <p><input type="number" id="row"  name="circle_radius"  placeholder="Enter radius of dot" />
+      </p>
+      <p>Select Dots color <input type="color" name="dots_color"  id="dot_color" placeholder="Enter color of dots" /></p>
+    </div>
+    <div id="grid-4">
+      <p>Select Box color: <input type="color" name="box_color"  id="row" placeholder="Enter color of box" /></p>
+      <input type="button" name="button" value="click"  onClick="formSubmit(this.form)">
+    </div>
+  </div>
+  </form>
+  
+  <h1>Result grid is</h1>
+  <div >
+    <table id="dynamic_table_four">
+    </table>
+</div>
+
+  
+  
+</body>
+
+<footer>
+  <script src="index.js"></script>
+</footer>
+
+</html>
